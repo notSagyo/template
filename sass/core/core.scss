@@ -2,7 +2,8 @@
 //Imports -------------------------------------------------------------------//
 @use '../abstracts/abstracts' as *;
 @use 'reset';
-@import 'fonts';
+@use 'fonts';
+@use '../components/burger' as burger;
 // @import '../vendor/sass-flexbox/main';
 //Abstracts variables import is necessary.
 // @import '../abstracts/variables/variables';
@@ -10,6 +11,11 @@
 
 //Styling -------------------------------------------------------------------//
 //Default tags
+body {
+    background-color: $background-color;
+    color: $foreground-color;
+}
+
 a { color: $terciary-color; }
 
 //Small+
