@@ -1,0 +1,24 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "Template to quickly initialize personal web projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notSagyo/template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notSagyo/template/issues"
+  },
+  "homepage": "https://github.com/notSagyo/template#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "postcss": "^8.2.15"
+  }
+}
