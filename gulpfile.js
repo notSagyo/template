@@ -1,12 +1,36 @@
+//Packages ----------------------------------------------------------------- //
 var gulp = require('gulp');
+var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
+//PostCSS packages
+var cssnano = require('cssnano');
+var autoprefixer = require('autoprefixer');
 
-gulp.task('styles', function() {
-    return gulp.src('src/styles.css')
-    .pipe(postcss())
-    .pipe(gulp.dest('public/css'));
+//Processors used
+var processors = [
+    cssnano,
+    autoprefixer
+];
+
+//Tasks -------------------------------------------------------------------- //
+gulp.task('compileCSS', function() {
+    return gulp.src(['src/*.css'])
+        .pipe(postcss(processors))
+        .pipe(gulp.dest('public/css'));
 })
 
-gulp.task('watch:styles', function(){
-    gulp.watch('**/*.css', ['styles'])
+gulp.task('compileSASS', function() {
+    return gulp.src(['src/**/*.scss'])
+        .pipe(sass())
+        .pipe(postcss(processors))
+        .pipe(gulp.dest('public/css'))
+})
+
+//Watch -------------------------------------------------------------------- //
+gulp.task('watchCSS', function(){
+    gulp.watch('**/*.css', gulp.series(['compile']))
+})
+
+gulp.task('watchSASS', function(){
+    gulp.watch('**/*.scss', gulp.series(['styles']))
 })

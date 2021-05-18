@@ -1,0 +1,14 @@
+body {
+    background: pink;
+    background-color: rosybrown;
+    background-image: pink;
+
+    div {
+        display: flex;
+        margin: 0;
+    }
+}
+
+div::placeholder {
+    color: rosybrown;
+}
