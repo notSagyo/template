@@ -3,7 +3,7 @@
 $structure-at: url("struct/burger.html");
 
 //Imports
-@use "../abstracts/abstracts" as *;
+@use "../abstracts/variables/variables" as *;
 
 .burger {
     $line-width: 20px;

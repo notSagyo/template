@@ -1,11 +1,9 @@
 // This file will be generally used in every page in the site!
 //Imports -------------------------------------------------------------------//
-@use '../abstracts/abstracts' as *;
 @use 'reset';
 @use 'fonts';
-@use '../components/burger';
-// @use '../vendor/sass-flexbox/main';
-//Abstracts variables import is necessary.
+//Import variables or abstracts is necessary !
+@use '../abstracts/abstracts' as *;
 // @use '../abstracts/variables/variables';
 
 

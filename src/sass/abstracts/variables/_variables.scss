@@ -1,5 +1,12 @@
-@use "colors";
+// Generic project's variables file.
+// Add and import variables that should be available
+// in every SCSS files that import "abstracts".
 
+//Uses
+//@use 'colors' as *;
+
+//Imports
+@import 'colors';
 
 //Good contrast against secondary.
 $primary-color: black;

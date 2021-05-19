@@ -1,11 +1,11 @@
 //Imports -------------------------------------------------------------------//
-
+@use '../abstracts/abstracts' as *;
 
 //Styling -------------------------------------------------------------------//
 
 
 //Small+
-@media only screen and(min-width: 768px) { }
+@media only screen and(min-width: 768px) {body { color: $amber-100;} }
 //Medium+
 @media only screen and(min-width: 1024px) { }
 //Large+

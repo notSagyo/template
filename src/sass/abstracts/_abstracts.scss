@@ -1,3 +1,4 @@
-@use "functions/functions";
-@use "mixins/mixins";
-@use "variables/variables";
+//Import selected abstracts to use everywhere in the project
+@import "functions/functions";
+@import "mixins/mixins";
+@import "variables/variables";

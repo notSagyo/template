@@ -1,3 +1,7 @@
+// Generic project mixins' file.
+// Add and import mixins that should be available
+// in every SCSS files that import "abstracts".
+
 //Margin padding mixins ------------ //
 //Margins ------ //
 @mixin mx($size) {
