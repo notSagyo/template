@@ -17,16 +17,16 @@ body {
 a { color: $terciary-color; }
 
 //Small+
-@media only screen and(min-width: 768px) { }
+// @media only screen and(min-width: 768px) { }
 //Medium+
-@media only screen and(min-width: 1024px) { }
+// @media only screen and(min-width: 1024px) { }
 //Large+
-@media only screen and(min-width: 1200px) { }
+// @media only screen and(min-width: 1200px) { }
 
 
 //Small-
-@media only screen and(max-width: 768px) { }
+// @media only screen and(max-width: 768px) { }
 //Medium-
-@media only screen and(max-width: 1024px) { }
+// @media only screen and(max-width: 1024px) { }
 //Large-
-@media only screen and(max-width: 1200px) { }
+// @media only screen and(max-width: 1200px) { }

@@ -1,42 +1,42 @@
-/* STYLE RESET --------------------------------------------------------------*/
-*, *:before, *:after{
+/* STYLE RESET ------------------------------------------------------------- */
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
 html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b,
 u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead,
-tr, th, td, main, canvas, embed, footer, header, nav, section, video, button{
+tr, th, td, main, canvas, embed, footer, header, nav, section, video, button {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
+    font-size: 100%;
     vertical-align: baseline;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     text-size-adjust: none;
 }
 
-body{ line-height: 1; }
+body { line-height: 1; }
 
-footer, header, nav, section, main{ display: block; }
+footer, header, nav, section, main { display: block; }
 
-ol, ul{ list-style: none; }
+ol, ul { list-style: none; }
 
-blockquote, q{ quotes: none; }
+blockquote, q { quotes: none; }
 
-blockquote:before, blockquote:after, q:before, q:after{
+blockquote::before, blockquote::after, q::before, q::after {
     content: '';
     content: none;
 }
 
-table{
+table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-input{
+input {
     -webkit-appearance: none;
     border-radius: 0;
 }
@@ -54,4 +54,5 @@ button {
     &:active { outline: auto; }
     &:focus { outline: auto; }
 }
-/* END STYLE RESET ----------------------------------------------------------*/
+
+/* END STYLE RESET --------------------------------------------------------- */

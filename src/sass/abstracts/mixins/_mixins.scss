@@ -8,6 +8,7 @@
     margin-left: $size;
     margin-right: $size;
 }
+
 @mixin my($size) {
     margin-top: $size;
     margin-bottom: $size;
@@ -17,6 +18,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 @mixin my-auto {
     margin-top: auto;
     margin-bottom: auto;
@@ -27,6 +29,7 @@
     padding-left: $size;
     padding-right: $size;
 }
+
 @mixin py($size) {
     padding-top: $size;
     padding-bottom: $size;
@@ -36,6 +39,7 @@
     padding-left: auto;
     padding-right: auto;
 }
+
 @mixin py-auto {
     padding-top: auto;
     padding-bottom: auto;
