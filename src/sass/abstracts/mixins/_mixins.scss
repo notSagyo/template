@@ -2,6 +2,11 @@
 // Add and import mixins that should be available
 // in every SCSS files that import "abstracts".
 
+@mixin size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
 //Margin padding mixins ------------ //
 //Margins ------ //
 @mixin mx($size) {

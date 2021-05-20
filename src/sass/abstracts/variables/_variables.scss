@@ -2,10 +2,8 @@
 // Add and import variables that should be available
 // in every SCSS files that import "abstracts".
 
-//Uses
-//@use 'colors' as *;
-
 //Imports
+//@use 'colors' as *;
 @import 'colors';
 
 //Good contrast against secondary.
@@ -19,3 +17,15 @@ $terciary-color: blue;
 $background-color: dimgray;
 //Color used for things like text, svg, etc.
 $foreground-color: white;
+
+
+//Shortforms
+$primary: $primary-color;
+$secondary: $secondary-color;
+$terciary: $terciary-color;
+
+$background: $background-color;
+$foreground: $foreground-color;
+
+$bg: $background-color;
+$fg: $foreground-color;
