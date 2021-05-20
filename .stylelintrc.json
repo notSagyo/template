@@ -7,7 +7,7 @@
         "at-rule-no-unknown": null,
         "scss/at-rule-no-unknown": true,
         "max-empty-lines": null,
-        "indentation": 4,
+        "indentation": "tab",
         "selector-list-comma-newline-after": null
       }
 }

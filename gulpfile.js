@@ -1,15 +1,15 @@
 //Gulp packages ------------------------------------------------------------ //
 var gulp = require('gulp');
-var sass = require('gulp-dart-sass');
 var postcss = require('gulp-postcss');
+var sass = require('gulp-dart-sass');
 var rename = require('gulp-rename')
 //PostCSS packages
 var cssnano = require('cssnano');
-var autoprefixer = require('autoprefixer');
+var presetEnv = require('postcss-preset-env');
 
 //Variables ---------------------------------------------------------------- //
 //Processors used
-var processors = [ autoprefixer ];
+var processors = [ presetEnv() ];
 var distProcessors = processors.concat([cssnano]);
 
 //URLs
