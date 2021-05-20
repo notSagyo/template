@@ -23,6 +23,7 @@
     "gulp-postcss": "^9.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-stylelint": "^13.0.0",
+    "lost": "^8.3.1",
     "postcss": "^8.2.15",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",

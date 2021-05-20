@@ -6,10 +6,13 @@ var rename = require('gulp-rename')
 //PostCSS packages
 var cssnano = require('cssnano');
 var presetEnv = require('postcss-preset-env');
+var lost = require('lost');
 
 //Variables ---------------------------------------------------------------- //
 //Processors used
-var processors = [ presetEnv() ];
+var processors = [ lost,
+	presetEnv()
+];
 var distProcessors = processors.concat([cssnano]);
 
 //URLs
