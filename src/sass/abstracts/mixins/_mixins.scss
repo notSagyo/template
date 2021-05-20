@@ -8,6 +8,11 @@
 }
 
 //Margin padding mixins ------------ //
+@mixin reset-pm($size) {
+	padding: 0;
+	margin: 0;
+}
+
 //Margins ------ //
 @mixin mx($size) {
 	margin-left: $size;
