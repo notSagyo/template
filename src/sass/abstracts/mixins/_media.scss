@@ -1,0 +1,13 @@
+@use '../variables/variables' as variables;
+
+@mixin media-sm {
+	@media only screen and(min-width: variables.$media-query-sm) { @content; }
+}
+
+@mixin media-md {
+	@media only screen and(min-width: variables.$media-query-md) { @content; }
+}
+
+@mixin media-lg {
+	@media only screen and(min-width: variables.$media-query-lg) { @content; }
+}
