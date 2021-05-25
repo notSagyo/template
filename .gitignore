@@ -1,3 +1,7 @@
+# VSCode
+.vscode
+
+# Git Node.js Template
 # Logs
 logs
 *.log
