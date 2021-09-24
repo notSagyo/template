@@ -1,12 +1,10 @@
 /* STYLE RESET ------------------------------------------------------------- */
-*, *::before, *::after {
-	box-sizing: border-box;
-}
+*, *::before, *::after { box-sizing: border-box; }
 
 html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b,
 u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead,
-tr, th, td, main, canvas, embed, footer, header, nav, section, video, button {
+tr, th, td, main, canvas, embed, footer, header, nav, section, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -18,11 +16,7 @@ tr, th, td, main, canvas, embed, footer, header, nav, section, video, button {
 	text-size-adjust: none;
 }
 
-body { line-height: 1; }
-
 footer, header, nav, section, main { display: block; }
-
-ol, ul { list-style: none; }
 
 blockquote, q { quotes: none; }
 
@@ -31,14 +25,11 @@ blockquote::before, blockquote::after, q::before, q::after {
 	content: none;
 }
 
+ol, ul { list-style: none; }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-
-input {
-	-webkit-appearance: none;
-	border-radius: 0;
 }
 
 a {
@@ -46,13 +37,11 @@ a {
 	color: inherit;
 }
 
-button {
-	background: none;
-	outline: none;
-	cursor: pointer;
-
-	&:active { outline: auto; }
-	&:focus { outline: auto; }
+input, select, button {
+	padding: 0;
+	margin: 0;
+	font: inherit;
+	font-size: 100%;
 }
 
 /* END STYLE RESET --------------------------------------------------------- */
