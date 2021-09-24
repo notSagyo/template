@@ -1,20 +1,20 @@
 // This file will be generally used in every page in the site!
 //Imports -------------------------------------------------------------------//
-@use 'reset';
+@use 'init';
 @use 'fonts';
-//Import variables or abstracts is necessary !
+//Import variables or abstracts is necessary to use colors !
 @use '../abstracts/abstracts' as *;
 // @use '../abstracts/variables/variables';
 
 
 //Styling -------------------------------------------------------------------//
-//Default tags
 body {
 	background-color: $background-color;
 	color: $foreground-color;
 }
 
 a { color: $terciary-color; }
+
 
 //Small+
 // @media only screen and(min-width: 768px) { }
