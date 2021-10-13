@@ -1,19 +1,17 @@
 //Gulp packages ------------------------------------------------------------ //
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
-var sass = require('gulp-dart-sass');
+var sass = require('gulp-sass')(require('sass'));
 var rename = require('gulp-rename')
 //PostCSS packages
 var cssnano = require('cssnano');
 var presetEnv = require('postcss-preset-env');
 var lost = require('lost');
-var rucksack = require('rucksack-css');
 
 //Variables ---------------------------------------------------------------- //
 //Processors
 var processors = [
 	lost(),
-	rucksack(),
 	presetEnv()
 ];
 var distProcessors = processors.concat([(cssnano())]);
@@ -22,44 +20,56 @@ var distProcessors = processors.concat([(cssnano())]);
 var paths = {
 	src: 'src/**',
 	dest: 'public/css'
-}
+};
 
 //Tasks -------------------------------------------------------------------- //
-gulp.task('buildCSS', function() {
+const buildCss = function() {
     return gulp.src([srcPath + '/*.css'])
         .pipe(postcss(processors))
         .pipe(rename({dirname:''}))
         .pipe(gulp.dest(paths.src));
-})
+};
+gulp.task('buildcss', buildCss);
+gulp.task('buildCSS', buildCss);
 
-gulp.task('buildCSSDist', function() {
+const buildCssDist = function() {
     return gulp.src([srcPath + '/*.css'])
         .pipe(postcss(distProcessors))
         .pipe(rename({dirname:''}))
         .pipe(gulp.dest(paths.dest));
-})
+};
+gulp.task('buildcssdist', buildCssDist);
+gulp.task('buildCSSDist', buildCssDist);
 
-gulp.task('buildSASS', function() {
+const buildSass = function() {
     return gulp.src([paths.src + '/*.scss'])
-        .pipe(sass())
+		.pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(rename({dirname:''}))
         .pipe(gulp.dest(paths.dest))
-})
+};
+gulp.task('buildSASS', buildSass);
+gulp.task('buildsass', buildSass);
 
-gulp.task('buildSASSDist', function() {
+const buildSassDist = function() {
     return gulp.src([paths.src + '/*.scss'])
-        .pipe(sass())
+		.pipe(sass().on('error', sass.logError))
         .pipe(postcss(distProcessors))
         .pipe(rename({dirname:''}))
         .pipe(gulp.dest(paths.dest))
-})
+};
+gulp.task('buildSASSDist', buildSassDist);
+gulp.task('buildsassdist', buildSassDist);
 
-//Watch -------------------------------------------------------------------- //
-gulp.task('watchCSS', function(){
+//Watch ----------------------------------------------------------  ---------- //
+const watchCss = function(){
     gulp.watch(paths.src + '/*.css', gulp.series(['buildCSS']))
-})
+};
+gulp.task('watchCSS', watchCss);
+gulp.task('watchcss', watchCss);
 
-gulp.task('watchSASS', function(){
+const watchSass = function(){
     gulp.watch(paths.src + '/*.scss', gulp.series(['buildSASS']))
-})
+};
+gulp.task('watchSASS', watchSass);
+gulp.task('watchsass', watchSass);
