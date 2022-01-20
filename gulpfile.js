@@ -30,7 +30,7 @@ const buildCss = function() {
         .pipe(gulp.dest(paths.src));
 };
 gulp.task('buildcss', buildCss);
-gulp.task('buildCSS', buildCss);
+gulp.task('buildCss', buildCss);
 
 const buildCssDist = function() {
     return gulp.src([srcPath + '/*.css'])
@@ -39,7 +39,7 @@ const buildCssDist = function() {
         .pipe(gulp.dest(paths.dest));
 };
 gulp.task('buildcssdist', buildCssDist);
-gulp.task('buildCSSDist', buildCssDist);
+gulp.task('buildCssDist', buildCssDist);
 
 const buildSass = function() {
     return gulp.src([paths.src + '/*.scss'])
@@ -48,7 +48,7 @@ const buildSass = function() {
         .pipe(rename({dirname:''}))
         .pipe(gulp.dest(paths.dest))
 };
-gulp.task('buildSASS', buildSass);
+gulp.task('buildSass', buildSass);
 gulp.task('buildsass', buildSass);
 
 const buildSassDist = function() {
@@ -58,18 +58,18 @@ const buildSassDist = function() {
         .pipe(rename({dirname:''}))
         .pipe(gulp.dest(paths.dest))
 };
-gulp.task('buildSASSDist', buildSassDist);
+gulp.task('buildSassDist', buildSassDist);
 gulp.task('buildsassdist', buildSassDist);
 
 //Watch ----------------------------------------------------------  ---------- //
 const watchCss = function(){
     gulp.watch(paths.src + '/*.css', gulp.series(['buildCSS']))
 };
-gulp.task('watchCSS', watchCss);
+gulp.task('watchCss', watchCss);
 gulp.task('watchcss', watchCss);
 
 const watchSass = function(){
     gulp.watch(paths.src + '/*.scss', gulp.series(['buildSASS']))
 };
-gulp.task('watchSASS', watchSass);
+gulp.task('watchSass', watchSass);
 gulp.task('watchsass', watchSass);

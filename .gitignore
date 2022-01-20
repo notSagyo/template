@@ -2,9 +2,9 @@
 .vscode
 **/test/
 **/tests/
-**/test.*
-**/test-*.*
-**/tests.*
+test.*
+test-*.*
+tests.*
 
 # Git Node.js Template
 # Logs

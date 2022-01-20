@@ -1,4 +1,4 @@
-//Import selected abstracts to use everywhere in the project
-@import "functions/functions";
-@import "mixins/mixins";
-@import "variables/variables";
+// Forward selected abstracts to use everywhere in the project
+@forward 'functions/functions';
+@forward 'mixins/mixins';
+@forward 'variables/variables';

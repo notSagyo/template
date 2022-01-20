@@ -1,20 +1,16 @@
-// Generic project mixins' file.
-// Add and import mixins that should be available
-// in every SCSS files that import "abstracts".
-@import "media";
-
+// Add and import mixins to be available in every files that use "abstracts".
 @mixin size($width, $height: $width) {
 	width: $width;
 	height: $height;
 }
 
-//Margin padding mixins ------------ //
+// Padding / Margin --------------------------------------------------------- //
 @mixin reset-pm($size) {
 	padding: 0;
 	margin: 0;
 }
 
-//Margins ------ //
+// Margins -------------------------- //
 @mixin mx($size) {
 	margin-left: $size;
 	margin-right: $size;
@@ -35,7 +31,7 @@
 	margin-bottom: auto;
 }
 
-//Paddings ----- //
+// Paddings ------------------------- //
 @mixin px($size) {
 	padding-left: $size;
 	padding-right: $size;

@@ -2,27 +2,25 @@
 // Add and import variables that should be available
 // in every SCSS files that import "abstracts".
 
-//Imports
-//@use 'colors' as *;
-@import 'colors';
+// Imports
+@use 'colors' as *;
+@forward 'colors';
 
-//Variables -----------------------------------------------------------------//
-
-
-//Good contrast against secondary.
+// Colors ------------------------------------------------------------------- //
+// Good contrast against secondary.
 $primary-color: black;
-//Good contrast against primary.
+// Good contrast against primary.
 $secondary-color: yellow;
-//Color usually used for accents like links.
+// Color usually used for accents like links.
 $terciary-color: blue;
 
-//Color used for the page's bg, ie. the <body> tag.
+// Color used for the page's bg, ie. the <body> tag.
 $background-color: black;
-//Color used for things like text, svg, etc.
+// Color used for things like text, svg, etc.
 $foreground-color: white;
 
 
-//Shortforms
+// Shortforms
 $primary: $primary-color;
 $secondary: $secondary-color;
 $terciary: $terciary-color;
@@ -32,3 +30,10 @@ $foreground: $foreground-color;
 
 $bg: $background-color;
 $fg: $foreground-color;
+
+// Breakpoints -------------------------------------------------------------- //
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
