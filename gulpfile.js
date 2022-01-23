@@ -19,7 +19,7 @@ var distProcessors = processors.concat([(cssnano())]);
 //URLs
 var paths = {
 	src: 'src/**',
-	dest: 'public/css'
+	dest: 'dist/css'
 };
 
 //Tasks -------------------------------------------------------------------- //
