@@ -1,20 +1,12 @@
-// This file will be used in every page in the site!
-// Imports -------------------------------------------------------------------//
-@use 'init';
+// Imports ------------------------------------------------------------------ //
 @use '../abstracts/abstracts' as *;
+@use 'typography' as *;
 
-// Styling -------------------------------------------------------------------//
+// Styling ------------------------------------------------------------------ //
+body {
+	line-height: 1;
+	background-color: $background-color;
+	color: $foreground-color;
+}
 
-// Small+
-// @media only screen and(min-width: $sm) { }
-// Medium+
-// @media only screen and(min-width: $md) { }
-// Large+
-// @media only screen and(min-width: $lg) { }
-
-// Small-
-// @media only screen and(max-width: $sm) { }
-// Medium-
-// @media only screen and(max-width: $md) { }
-// Large-
-// @media only screen and(max-width: $lg) { }
+a { color: $terciary-color; }

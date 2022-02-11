@@ -14,15 +14,15 @@ gulp buildSass
 
 gulp watchSass
 ```
-Add ``Dist`` at the end to minify and/or add other dist processors to the pipeline:
+Add ``Prod`` at the end to minify and/or add other production processors to the pipeline:
 ```
-gulp buildCssDist
+gulp buildCssProd
 
-gulp buildSassDist
+gulp buildSassProd
 ```
 
 ## Stylelint
-Recommended to use VSCode extension [stylelint.vscode-stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint). Since version ``1.x`` don't support SCSS by default add it to VSCode's ``settings.json``.
+Recommended to use VSCode extension [stylelint.vscode-stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint); since version ``1.x`` doesn't support SCSS by default add it to VSCode's ``settings.json``:
 ```
 "stylelint.validate": [
     (other languages),
