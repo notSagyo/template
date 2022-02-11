@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 @mixin row($full-width: "false") {
   box-sizing: border-box;
   margin: 0 auto;

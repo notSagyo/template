@@ -1,6 +1,8 @@
 // Creds to https://github.com/kristoferjoseph/flexboxgrid
 // No gutters
 // No text alignment with justified container classes (center-xs, for example)
+@use 'variables' as *;
+@use 'mixins' as *;
 
 .row {
   @include row();
