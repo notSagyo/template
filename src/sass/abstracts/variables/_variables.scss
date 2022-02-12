@@ -1,7 +1,6 @@
 // Imports
 @use 'colors' as *;
-
-@forward 'colors';
+@use '../functions' as f;
 
 // Colors ------------------------------------------------------------------- //
 $primary-color: black; // Good contrast against secondary
@@ -23,8 +22,8 @@ $bg: $background-color;
 $fg: $foreground-color;
 
 // Breakpoints -------------------------------------------------------------- //
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-$xxl: 1400px;
+$sm: f.em(576);
+$md: f.em(768);
+$lg: f.em(992);
+$xl: f.em(1200);
+$xxl: f.em(1400);

@@ -1,12 +1,13 @@
 // Imports
-@use '../variables/variables' as var;
+@use '../variables' as var;
+@use '../functions' as f;
 
 // Mobile first ------------------------------------------------------------- //
-@mixin sm-up { @media only screen and(min-width: (var.$sm + 1)) { @content; } }
-@mixin md-up { @media only screen and(min-width: (var.$md + 1)) { @content; } }
-@mixin lg-up { @media only screen and(min-width: (var.$lg + 1)) { @content; } }
-@mixin xl-up { @media only screen and(min-width: (var.$xl + 1)) { @content; } }
-@mixin xxl-up { @media only screen and(min-width: (var.$xxl + 1)) { @content; } }
+@mixin sm-up { @media only screen and(min-width: (var.$sm + f.em(1))) { @content; } }
+@mixin md-up { @media only screen and(min-width: (var.$md + f.em(1))) { @content; } }
+@mixin lg-up { @media only screen and(min-width: (var.$lg + f.em(1))) { @content; } }
+@mixin xl-up { @media only screen and(min-width: (var.$xl + f.em(1))) { @content; } }
+@mixin xxl-up { @media only screen and(min-width: (var.$xxl + f.em(1))) { @content; } }
 
 // Desktop first ------------------------------------------------------------ //
 @mixin sm-down { @media only screen and(max-width: var.$sm) { @content; } }

@@ -1,3 +1,11 @@
-// Generic project's function file.
-// Add and import functions that should be available
-// in every SCSS files that import "abstracts".
+@use 'sass:math';
+
+// Conversions (font-size 16px) --------------------------------------------- //
+@function em($px) {
+	$em: math.div($px, 16) * 1em;
+	@return $em;
+}
+@function rem($px) {
+	$rem: math.div($px, 16) * 1rem;
+	@return $rem;
+}
