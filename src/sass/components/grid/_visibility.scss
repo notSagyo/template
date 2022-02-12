@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'sass:list';
 
 .show {
 	display: block !important;
@@ -30,40 +31,40 @@
 } // Mixin to run inside of for loop - creates visibility classes * Not for developer use *
 
 @for $i from 1 through length($breakpoint-all-prefixes) {
-	$thisPrefix: nth($breakpoint-all-prefixes, $i);
-	@if $thisPrefix == "xs" {
-		@include vis-factory($thisPrefix);
-	} @else if $thisPrefix == "xs-only" {
+	$this-prefix: list.nth($breakpoint-all-prefixes, $i);
+	@if $this-prefix == 'xs' {
+		@include vis-factory($this-prefix);
+	} @else if $this-prefix == 'xs-only' {
 		@media #{$breakpoint-xs-only} {
-			@include vis-factory($thisPrefix);
+			@include vis-factory($this-prefix);
 		}
-	} @else if $thisPrefix == "sm" {
+	} @else if $this-prefix == 'sm' {
 		@media #{$breakpoint-sm-up} {
-			@include vis-factory($thisPrefix);
+			@include vis-factory($this-prefix);
 		}
-	} @else if $thisPrefix == "sm-only" {
+	} @else if $this-prefix == 'sm-only' {
 		@media #{$breakpoint-sm-only} {
-			@include vis-factory($thisPrefix);
+			@include vis-factory($this-prefix);
 		}
-	} @else if $thisPrefix == "md" {
+	} @else if $this-prefix == 'md' {
 		@media #{$breakpoint-md-up} {
-			@include vis-factory($thisPrefix);
+			@include vis-factory($this-prefix);
 		}
-	} @else if $thisPrefix == "md-only" {
+	} @else if $this-prefix == 'md-only' {
 		@media #{$breakpoint-md-only} {
-			@include vis-factory($thisPrefix);
+			@include vis-factory($this-prefix);
 		}
-	} @else if $thisPrefix == "lg" {
+	} @else if $this-prefix == 'lg' {
 		@media #{$breakpoint-lg-up} {
-			@include vis-factory($thisPrefix);
+			@include vis-factory($this-prefix);
 		}
-	} @else if $thisPrefix == "lg-only" {
+	} @else if $this-prefix == 'lg-only' {
 		@media #{$breakpoint-lg-only} {
-			@include vis-factory($thisPrefix);
+			@include vis-factory($this-prefix);
 		}
-	} @else if $thisPrefix == "xl" {
+	} @else if $this-prefix == 'xl' {
 		@media #{$breakpoint-xl-up} {
-			@include vis-factory($thisPrefix);
+			@include vis-factory($this-prefix);
 		}
 	}
 }
