@@ -1,6 +1,6 @@
 // Import every other file that should be compiled into the main CSS
 // Abstracts
-@use 'abstracts/abstracts';
+@use 'abstracts';
 
 // Reset
 @use 'base/reset';
@@ -12,7 +12,7 @@
 @use 'base/base';
 
 // Components
-// @use 'components/grid';
+@use 'components/grid';
 
 // Layout
 @use 'layout/footer';
