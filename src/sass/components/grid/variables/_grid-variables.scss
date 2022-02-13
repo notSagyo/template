@@ -1,12 +1,13 @@
+@use '../../../abstracts/variables' as var;
 @use '../../../abstracts/functions' as f;
 
 // Grid
 $grid-columns: 12 !default; // Set number of columns in the grid
 
-$xs-max: 40em !default; // Set xs breakpoint's max width
-$sm-max: 64em !default; // Set sm breakpoint's max width
-$md-max: 90em !default; // Set md breakpoint's max width
-$lg-max: 120em !default; // Set lg breakpoint's max width
+$xs-max: var.$sm !default; // Set xs breakpoint's max width
+$sm-max: var.$md !default; // Set sm breakpoint's max width
+$md-max: var.$lg !default; // Set md breakpoint's max width
+$lg-max: var.$xl !default; // Set lg breakpoint's max width
 
 $gutter: 1rem !default; // Set gutter size
 
