@@ -1,74 +1,30 @@
+@mixin flex-if-row($row) {
+	@if $row == 'true' or $row == 'row' {
+		display: flex;
+	} @else {
+		display: block;
+	}
+}
+
 @mixin show($breakpoint, $row) {
 	@if $breakpoint == 'xs' {
-		@if $row == 'true' or $row == 'row' {
-			display: flex;
-		} @else {
-			display: block;
-		}
+		@include flex-if-row($row);
 	} @else if $breakpoint == 'xs-only' {
-		@media #{$breakpoint-xs-only} {
-			@if $row == 'true' or $row == 'row' {
-				display: flex;
-			} @else {
-				display: block;
-			}
-		}
+		@media #{$breakpoint-xs-only} { @include flex-if-row($row); }
 	} @else if $breakpoint == 'sm' {
-		@media #{$breakpoint-sm-up} {
-			@if $row == 'true' or $row == 'row' {
-				display: flex;
-			} @else {
-				display: block;
-			}
-		}
+		@media #{$breakpoint-sm-up} { @include flex-if-row($row); }
 	} @else if $breakpoint == 'sm-only' {
-		@media #{$breakpoint-sm-only} {
-			@if $row == 'true' or $row == 'row' {
-				display: flex;
-			} @else {
-				display: block;
-			}
-		}
+		@media #{$breakpoint-sm-only} { @include flex-if-row($row); }
 	} @else if $breakpoint == 'md' {
-		@media #{$breakpoint-md-up} {
-			@if $row == 'true' or $row == 'row' {
-				display: flex;
-			} @else {
-				display: block;
-			}
-		}
+		@media #{$breakpoint-md-up} { @include flex-if-row($row); }
 	} @else if $breakpoint == 'md-only' {
-		@media #{$breakpoint-md-only} {
-			@if $row == 'true' or $row == 'row' {
-				display: flex;
-			} @else {
-				display: block;
-			}
-		}
+		@media #{$breakpoint-md-only} { @include flex-if-row($row); }
 	} @else if $breakpoint == 'lg' {
-		@media #{$breakpoint-lg-up} {
-			@if $row == 'true' or $row == 'row' {
-				display: flex;
-			} @else {
-				display: block;
-			}
-		}
+		@media #{$breakpoint-lg-up} { @include flex-if-row($row); }
 	} @else if $breakpoint == 'lg-only' {
-		@media #{$breakpoint-lg-only} {
-			@if $row == 'true' or $row == 'row' {
-				display: flex;
-			} @else {
-				display: block;
-			}
-		}
+		@media #{$breakpoint-lg-only} { @include flex-if-row($row); }
 	} @else if $breakpoint == 'xl' {
-		@media #{$breakpoint-xl-up} {
-			@if $row == 'true' or $row == 'row' {
-				display: flex;
-			} @else {
-				display: block;
-			}
-		}
+		@media #{$breakpoint-xl-up} { @include flex-if-row($row); }
 	} @else {
 		@warn 'show mixin arg must be one of the existing breakpoints or ranges (#{$breakpoint-all-prefixes})';
 	}
@@ -78,37 +34,21 @@
 	@if $breakpoint == 'xs' {
 		display: none;
 	} @else if $breakpoint == 'xs-only' {
-		@media #{$breakpoint-xs-only} {
-			display: none;
-		}
+		@media #{$breakpoint-xs-only} { display: none; }
 	} @else if $breakpoint == 'sm' {
-		@media #{$breakpoint-sm-up} {
-			display: none;
-		}
+		@media #{$breakpoint-sm-up} { display: none; }
 	} @else if $breakpoint == 'sm-only' {
-		@media #{$breakpoint-sm-only} {
-			display: none;
-		}
+		@media #{$breakpoint-sm-only} { display: none; }
 	} @else if $breakpoint == 'md' {
-		@media #{$breakpoint-md-up} {
-			display: none;
-		}
+		@media #{$breakpoint-md-up} { display: none; }
 	} @else if $breakpoint == 'md-only' {
-		@media #{$breakpoint-md-only} {
-			display: none;
-		}
+		@media #{$breakpoint-md-only} { display: none; }
 	} @else if $breakpoint == 'lg' {
-		@media #{$breakpoint-lg-up} {
-			display: none;
-		}
+		@media #{$breakpoint-lg-up} { display: none; }
 	} @else if $breakpoint == 'lg-only' {
-		@media #{$breakpoint-lg-only} {
-			display: none;
-		}
+		@media #{$breakpoint-lg-only} { display: none; }
 	} @else if $breakpoint == 'xl' {
-		@media #{$breakpoint-xl-up} {
-			display: none;
-		}
+		@media #{$breakpoint-xl-up} { display: none; }
 	} @else {
 		@warn 'hide mixin arg must be one of the existing breakpoints or ranges (#{$breakpoint-all-prefixes})';
 	}
