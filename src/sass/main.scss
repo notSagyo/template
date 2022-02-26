@@ -1,9 +1,9 @@
 // Import every other file that should be compiled into the main CSS
-// Abstracts
-@use 'abstracts';
-
 // Reset
 @use 'base/reset';
+
+// Abstracts
+@use 'abstracts';
 
 // Vendor
 // @use 'vendor/';

@@ -2,7 +2,6 @@
 // Structure:
 $structure-at: url('struct/burger.html');
 
-// Imports
 @use '../abstracts/variables/variables' as *;
 
 .burger {
@@ -24,13 +23,13 @@ $structure-at: url('struct/burger.html');
 		background-color: $secondary-color;
 	}
 
-	// With circle ------------------ //
+	// With circle ===================//
 	// width: $circle-radius;
 	// height: $circle-radius;
 	// border-radius: 50%;
 	// background-color: $primary-color;
 
-	// With circle on hover  -------- //
+	// With circle on hover  =========//
 	// &:hover {
 	//     border-radius: 50%;
 	//     background-color: lighten($color: $primary-color, $amount: 15);

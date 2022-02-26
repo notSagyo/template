@@ -1,16 +1,35 @@
-// Add and import mixins to be available in every files that use "abstracts".
+// Custom ====================================================================//
+
+// Hacks / Fixes =============================================================//
+@mixin v-align {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+// Limit the amount of vertical for a text
+@mixin v-clamp($lines) {
+	-webkit-line-clamp: $lines;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-word;
+}
+
+// Shorthands ================================================================//
 @mixin size($width, $height: $width) {
 	width: $width;
 	height: $height;
 }
 
-// Padding / Margin --------------------------------------------------------- //
+// Padding / Margin ==================//
 @mixin reset-pm {
 	padding: 0;
 	margin: 0;
 }
 
-// Margins -------------------------- //
+// Margins ===========================//
 @mixin mx($size) {
 	margin-left: $size;
 	margin-right: $size;
@@ -31,7 +50,7 @@
 	margin-bottom: auto;
 }
 
-// Paddings ------------------------- //
+// Paddings ==========================//
 @mixin px($size) {
 	padding-left: $size;
 	padding-right: $size;

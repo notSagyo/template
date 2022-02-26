@@ -1,8 +1,13 @@
-// Imports
-@use 'colors' as *;
+@use 'colors' as colors;
 @use '../functions' as f;
 
-// Colors ------------------------------------------------------------------- //
+// Custom ====================================================================//
+
+// Typography ================================================================//
+/* stylelint-disable-next-line value-keyword-case */
+$font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// Colors ====================================================================//
 $primary-color: black; // Good contrast against secondary
 $secondary-color: yellow; // Good contrast against primary
 $terciary-color: blue; // Accents like links, etc
@@ -21,7 +26,7 @@ $foreground: $foreground-color;
 $bg: $background-color;
 $fg: $foreground-color;
 
-// Breakpoints -------------------------------------------------------------- //
+// Breakpoints ===============================================================//
 $sm: f.em(576);
 $md: f.em(768);
 $lg: f.em(992);

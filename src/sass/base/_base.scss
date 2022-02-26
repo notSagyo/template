@@ -1,8 +1,6 @@
-// Imports ------------------------------------------------------------------ //
 @use '../abstracts' as *;
 @use 'typography' as *;
 
-// Styling ------------------------------------------------------------------ //
 body {
 	line-height: 1;
 	background-color: $background-color;

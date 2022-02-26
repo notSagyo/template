@@ -1,10 +1,7 @@
 # VSCode
 .vscode
-**/test/
-**/tests/
-test.*
-test-*.*
-tests.*
+*.map
+*.ignore*
 
 # Git Node.js Template
 # Logs

@@ -17,7 +17,7 @@ let postCssProcessors = [
 	lost(),
 	presetEnv()
 ];
-let postCssProdProcessors = postCssProcessors.concat([cssnano()]);
+let postCssProdProcessors = [...postCssProcessors, cssnano()];
 
 //URLs
 let paths = {
@@ -52,7 +52,7 @@ const buildSass = function() {
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
 		.pipe(postcss(postCssProcessors))
-		.pipe(sourcemaps.write())
+		.pipe(sourcemaps.write(''))
 		.pipe(rename({dirname:''}))
 		.pipe(gulp.dest(paths.cssDest));
 };

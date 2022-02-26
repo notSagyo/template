@@ -1,6 +1,6 @@
 @use 'sass:math';
 
-// Conversions (font-size 16px) --------------------------------------------- //
+// Conversions (font-size 16px) ==============================================//
 @function em($px) {
 	$em: math.div($px, 16) * 1em;
 	@return $em;
