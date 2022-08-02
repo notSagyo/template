@@ -2,9 +2,9 @@
 @use 'typography' as *;
 
 body {
-	line-height: 1;
-	background-color: $background-color;
-	color: $foreground-color;
+  line-height: 1;
+  background-color: $background-color;
+  color: $foreground-color;
 }
 
 a { color: $terciary-color; }
